@@ -42,7 +42,6 @@ class TodoResource(Resource):
         session.commit()
         return todo, 201
 
-
 class TodoListResource(Resource):
     @marshal_with(todo_fields)
     def get(self):
